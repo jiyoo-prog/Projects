@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | KHN Production</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="admin-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">K</span>
+      <span><strong>KHN</strong><small>ADMIN PANEL</small></span>
+    </a>
+    <a class="btn btn-ghost" href="index.html">View Website</a>
+  </header>
+
+  <main class="admin-shell">
+    <section class="admin-intro">
+      <p class="eyebrow">CONTENT MANAGER</p>
+      <h1>Manage your portfolio.</h1>
+      <p>Add images or video links, edit details, and remove projects from your browser.</p>
+    </section>
+
+    <section class="admin-grid">
+      <form class="admin-card" id="projectForm">
+        <div class="card-head">
+          <div>
+            <p class="eyebrow">NEW PROJECT</p>
+            <h2>Add Creation</h2>
+          </div>
+          <button class="text-btn hidden" type="button" id="cancelEdit">Cancel edit</button>
+        </div>
+
+        <input type="hidden" id="projectId" />
+
+        <label>
+          Project Title
+          <input id="title" type="text" placeholder="e.g. Cinematic Gaming Montage" required />
+        </label>
+
+        <label>
+          Category
+          <select id="category" required>
+            <option value="video">Video Editing</option>
+            <option value="graphics">Graphic Design</option>
+            <option value="thumbnail">Thumbnail</option>
+            <option value="branding">Branding</option>
+          </select>
+        </label>
+
+        <label>
+          Description
+          <textarea id="description" rows="4" placeholder="Short project description..." required></textarea>
+        </label>
+
+        <label>
+          Media Type
+          <select id="mediaType">
+            <option value="image">Image</option>
+            <option value="video">Video</option>
+          </select>
+        </label>
+
+        <label>
+          Upload Image
+          <input id="imageFile" type="file" accept="image/*" />
+          <small>For preview mode, uploaded images are stored in your browser only.</small>
+        </label>
+
+        <label>
+          Or Media URL
+          <input id="mediaUrl" type="url" placeholder="https://..." />
+          <small>Use an image URL or an embeddable video URL.</small>
+        </label>
+
+        <button class="btn btn-primary full" type="submit" id="saveBtn">Add Project</button>
+      </form>
+
+      <section class="admin-card project-manager">
+        <div class="card-head">
+          <div>
+            <p class="eyebrow">LIBRARY</p>
+            <h2>Your Projects</h2>
+          </div>
+          <button class="text-btn danger" id="resetProjects" type="button">Reset demo</button>
+        </div>
+        <div class="admin-project-list" id="adminProjectList"></div>
+      </section>
+    </section>
+
+    <section class="admin-note">
+      <strong>Important:</strong>
+      This preview version uses <code>localStorage</code>. It works immediately in VS Code/Live Server, but uploaded files exist only in this browser. For a real deployed site with cloud uploads, connect Firebase using the included setup guide.
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

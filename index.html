@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KHN Production — Video Editing and Graphic Design Portfolio" />
+  <title>KHN Production | Video Editor & Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">K</span>
+      <span>
+        <strong>KHN</strong>
+        <small>PRODUCTION</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="site-nav">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-admin" href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">VIDEO EDITOR • GRAPHIC DESIGNER</p>
+        <h1>Visuals that feel <span>future-ready.</span></h1>
+        <p class="hero-text">
+          I create cinematic edits, scroll-stopping social content, thumbnails, posters and brand visuals built to make people look twice.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">Explore My Work</a>
+          <a class="btn btn-ghost" href="#contact">Start a Project</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>50+</strong><span>Projects</span></div>
+          <div><strong>3+</strong><span>Creative Skills</span></div>
+          <div><strong>100%</strong><span>Custom Work</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbital-card">
+          <div class="orbital-ring ring-one"></div>
+          <div class="orbital-ring ring-two"></div>
+          <div class="orbital-core">
+            <span class="core-k">K</span>
+            <small>CREATE • EDIT • DESIGN</small>
+          </div>
+          <div class="floating-pill pill-a">VIDEO EDITING</div>
+          <div class="floating-pill pill-b">GRAPHICS</div>
+          <div class="floating-pill pill-c">MOTION</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">SELECTED CREATIONS</p>
+          <h2>Portfolio</h2>
+        </div>
+        <p>Filter by category and open any project for a closer look.</p>
+      </div>
+
+      <div class="filter-bar reveal" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="video">Video Editing</button>
+        <button class="filter-btn" data-filter="graphics">Graphic Design</button>
+        <button class="filter-btn" data-filter="thumbnail">Thumbnails</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+
+      <div class="empty-state hidden" id="emptyState">
+        <h3>No projects yet.</h3>
+        <p>Add a project from the Admin page.</p>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">WHAT I DO</p>
+          <h2>Creative Services</h2>
+        </div>
+        <p>Built for creators, brands and businesses that need sharp visual communication.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <span>01</span>
+          <h3>Video Editing</h3>
+          <p>Clean cuts, cinematic pacing, color work, sound design, reels and long-form content.</p>
+        </article>
+        <article class="service-card reveal">
+          <span>02</span>
+          <h3>Graphic Design</h3>
+          <p>Posters, promotional materials, social media assets and polished digital layouts.</p>
+        </article>
+        <article class="service-card reveal">
+          <span>03</span>
+          <h3>Thumbnails</h3>
+          <p>High-impact visual compositions designed for attention and stronger click-through.</p>
+        </article>
+        <article class="service-card reveal">
+          <span>04</span>
+          <h3>Brand Visuals</h3>
+          <p>Logos, visual direction and cohesive creative assets that make brands feel consistent.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-panel reveal">
+        <div>
+          <p class="eyebrow">ABOUT THE CREATOR</p>
+          <h2>I turn raw ideas into polished visual experiences.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I’m a creative editor and designer focused on modern digital content. My goal is simple: make every frame and every layout feel intentional, clear and memorable.
+          </p>
+          <div class="skills">
+            <span>Premiere Pro</span>
+            <span>After Effects</span>
+            <span>Photoshop</span>
+            <span>Canva</span>
+            <span>CapCut</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">LET'S CREATE SOMETHING</p>
+          <h2>Have a project in mind?</h2>
+          <p>Tell me what you need and let’s turn your idea into something people remember.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:jyocinth@gmail.com">Email Me</a>
+          <a class="btn btn-ghost" href="#">Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>KHN PRODUCTION</strong>
+      <span>Video Editor & Graphic Designer</span>
+    </div>
+    <p>© <span id="year"></span> KHN Production. All rights reserved.</p>
+  </footer>
+
+  <div class="modal hidden" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-copy">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
